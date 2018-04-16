@@ -13,7 +13,11 @@ public abstract class GeneralManufacturingProcess {
 	protected abstract void packageDevice();
 	protected abstract void storeDevice();
 	
-	// template method - commonly used in abstracting workflows, common across many types of objects
+	/* 
+	 * template method follows - commonly used in abstracting workflows
+	 * where we want to dictate the order of operations(assemble, etc.)
+	 * across different objects
+	 */
 	public void launchProcess() {
 		if(processName != null && !processName.isEmpty()) {
 		assembleDevice();
