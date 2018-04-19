@@ -20,10 +20,10 @@ public abstract class GeneralManufacturingProcess {
 	 */
 	public void launchProcess() {
 		if(processName != null && !processName.isEmpty()) {
-		assembleDevice();
-		testDevice();
-		packageDevice();
-		storeDevice();
+			assembleDevice();
+			testDevice();
+			packageDevice();
+			storeDevice();
 		} else {
 			System.out.println("Specify process please");
 		}
